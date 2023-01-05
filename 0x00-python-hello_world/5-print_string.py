@@ -2,4 +2,4 @@
 str = "Holberton School"
 x = 3 * str
 y = str[0:9]
-print(f"{x}{y}")
+print(f"{x} + '\n' + {y}")
