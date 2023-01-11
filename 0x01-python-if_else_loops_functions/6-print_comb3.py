@@ -8,3 +8,4 @@ for i in range(0, 10):
             print('{:d}{:d}'.format(i, j), end='')
         else:
             print('{:d}{:d}'.format(i, j), end=', ')
+print()
