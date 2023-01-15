@@ -20,10 +20,10 @@ if __name__ == "__main__":
     b = int(sys.argv[3])
 
     if op == '+':
-        print("{} {} = {}".format(a, b, add(a, b)))
+        print("{} + {} = {}".format(a, b, add(a, b)))
     elif op == '-':
-        print("{} {} = {}".format(a, b, sub(a, b)))
+        print("{} - {} = {}".format(a, b, sub(a, b)))
     elif op == '*':
-        print("{} {} = {}".format(a, b, mul(a, b)))
+        print("{} * {} = {}".format(a, b, mul(a, b)))
     elif op == '/':
-        print("{} {} = {}".format(a, b, add(a, b)))
+        print("{} / {} = {}".format(a, b, div(a, b)))
