@@ -1,2 +1,8 @@
 #!/bin/bash
-python3 -m py_compile $PYFILE
+
+in_file="main.py"
+out_file="$PYFILEc"
+
+python3 -m py_compile 'main.py'
+
+mv 'main.py' '$PYFILEc'
