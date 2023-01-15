@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 
+import hidden_4
+
 if __name__ == "__main__":
-
-    import hidden_4
-
     for str in dir(hidden_4):
         if str[0:2] != "__":
-            print("{}".format(str))
-
+            print(str)
