@@ -2,5 +2,5 @@
 
 def no_c(my_string):
     if my_string:
-        my_string.remove(c)
+        str.remove(c)
         return my_string
