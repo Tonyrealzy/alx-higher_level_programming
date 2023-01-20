@@ -7,5 +7,5 @@ def multiple_returns(sentence):
     if x > 0:
         return (x, y)
 
-    elif x = 0:
+    elif x == 0:
         return (x, None)
