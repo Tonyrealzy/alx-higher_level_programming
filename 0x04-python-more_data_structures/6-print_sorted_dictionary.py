@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 def print_sorted_dictionary(a_dictionary):
-    k = sorted(a_dictionary.keys())
-    v = a_dictionary.values()
+    new_list = sorted(a_dictionary.keys())
 
-    if a_dictionary:
-        print(k: v)
+    for k in new_list:
+        print("{}: {}".format(k, a_dictionary[k]))
