@@ -16,7 +16,7 @@ def roman_to_int(roman_string):
                 "M" : 1000
                 }
         result = 0
-        x = roman_string
+        s = roman_string
 
         for i in range(len(x)):
             if i > 0 and roman_to_int[s[i]] > roman_to_int[s[i - 1]]:
