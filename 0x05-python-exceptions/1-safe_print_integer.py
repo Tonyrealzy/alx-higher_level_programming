@@ -3,9 +3,9 @@
 def safe_print_integer(value):
     result = isinstance(value, int)
     try:
-        if result == True:
+        if result is True:
             print("{:d}".format(value))
             return True
     except:
-        if result == False:
-            return False
+        result is False:
+        return False
