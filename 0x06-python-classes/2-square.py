@@ -7,11 +7,12 @@ class Square:
 
     def __init__(self, size=0):
         self.__size = size
+        """Initialising the private method size"""
 
         try:
             type(size) == int
-            size >= 0
-        
+            if size >= 0:
+                return size
         except (TypeError, ValueError) as error:
-            print ("size must be an integer")
-            print ("size must be >= 0")
+            print("size must be an integer")
+            print("size must be >= 0")
