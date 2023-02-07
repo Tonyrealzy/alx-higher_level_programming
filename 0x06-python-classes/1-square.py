@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+"""Module contains class Square"""
 
-
-"""Module is as defined previously"""
 
 class Square:
-    """Size is initialised as a private variable"""
+    """A non-empty class Square"""
+
     def __init__(self, size):
-        self.size = __size
+        """Size is initialised as a private variable"""
+        
+        self.__size = size
