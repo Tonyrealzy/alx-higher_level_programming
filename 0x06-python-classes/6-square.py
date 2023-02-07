@@ -4,7 +4,7 @@
 
 class Square:
     """A non-empty class named Square"""
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         self.__size = size
         self.__position = position
 
@@ -27,7 +27,6 @@ class Square:
         """Initialising the private method position"""
     @position.setter
     def position(self, value):
-        self.__position = value
         if isinstance(value, tuple) and len(value) == 2:
             if isinstance(value[0], int) and isinstance(value[1], int):
                 if value[0] >= 0 and value[1] >= 0:
@@ -37,12 +36,14 @@ class Square:
 
     def area(self):
         return (self.__size ** 2)
+
     def my_print(self):
         if self.__size == 0:
             print()
         else:
             i, j = 0, 0
+            par = self.__position[0]
             for i in range(self.__position[1]):
                 print("")
             for i in range(self.__size):
-                print("{}{}".format(" " * self.__position[0], "#" * self.__size))
+                print("{}{}".format(" " * par, "#" * self.__size))
