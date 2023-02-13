@@ -18,9 +18,9 @@ class Node:
 
     @data.setter
     def data(self, value):
-        self.__data = value
         if type(value) != int:
             raise TypeError("data must be an integer")
+        self.__data = value
 
     @property
     def next_node(self):
@@ -28,9 +28,9 @@ class Node:
 
     @data.setter
     def next_node(self, value):
-        self.__next_node = value
         if type(value) != Node or value != None:
             raise TypeError("next_node must be a Node object")
+        self.__next_node = value
 
 class SinglyLinkedList:
     """Represent a singly-linked list."""
