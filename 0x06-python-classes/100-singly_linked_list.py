@@ -4,6 +4,11 @@
 class Node:
     """Represents a node"""
     def __init__(self, data, next_node=None):
+        """Initialize a new Node.
+        Args:
+            data (int): The data of the new Node.
+            next_node (Node): The next node of the new Node.
+        """
         self.__data = data
         self.__next_node = next_node
 
@@ -28,6 +33,8 @@ class Node:
             raise TypeError("next_node must be a Node object")
 
 class SinglyLinkedList:
+    """Represent a singly-linked list."""
+
     def __init__(self):
         self.__head = None
 
