@@ -29,20 +29,34 @@ class SinglyLinkedList:
     def __init__(self):
         self.__head = None
 
-    def print_list(self):
-        temp = self.__head
-        while temp:
-            print(temp.data)
-            temp = temp.next
-linked_list = SinglyLinkedList()
-linked_list.head = Node(1)
-position = Node(n)
-n = 2
-n += 1
-
-linked_list.head.next = second
-while n:
-    second.next = position
-
     def sorted_insert(self, value):
-        s
+        """Insert a new Node to the SinglyLinkedList.
+        The node is inserted into the list at the correct
+        ordered numerical position.
+        Args:
+            value (Node): The new Node to insert.
+        """
+        new = Node(value)
+        if self.__head is None:
+            new.next_node = None
+            self.__head = new
+        elif self.__head.data > value:
+            new.next_node = self.__head
+            self.__head = new
+        else:
+            tmp = self.__head
+            while (tmp.next_node is not None and
+                    tmp.next_node.data < value):
+                tmp = tmp.next_node
+            new.next_node = tmp.next_node
+            tmp.next_node = new
+
+    def __str__(self):
+        """Define the print() representation of a SinglyLinkedList."""
+        values = []
+        tmp = self.__head
+        while tmp is not None:
+            values.append(str(tmp.data))
+            tmp = tmp.next_node
+        return ('\n'.join(values))
+        
