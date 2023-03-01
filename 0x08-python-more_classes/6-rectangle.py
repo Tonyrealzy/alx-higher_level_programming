@@ -5,13 +5,17 @@
 class Rectangle:
     """Defines a rectangle"""
 
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     def __del__(self):
         """is called when an instance of Rectangle is deleted"""
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
 
     @property
     def width(self):
@@ -26,7 +30,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-
+        
     @property
     def height(self):
         """getter for def height"""
@@ -43,7 +47,7 @@ class Rectangle:
 
     def area(self):
         """returns the area of rectangle"""
-        return self.__height * self.__width
+        return (self.__height * self.__width)
     
     def perimeter(self):
         """returns the perimeter of a rectangle"""
@@ -59,9 +63,9 @@ class Rectangle:
         for i in range(self.__height - 1):
             rectangle += ("#" * self.__width) + "\n"
         rectangle += ("#" * self.__width)
+
         return rectangle
     
     def __repr__(self):
         """returns the representation of a rectangle"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-    
