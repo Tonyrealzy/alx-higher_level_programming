@@ -7,6 +7,10 @@ IDENTIFIED BY 'user_0d_2_pwd';
 CREATE DATABASE 
 IF NOT EXISTS `hbtn_0d_2`;
 
+GRANT USAGE
+ON *.*
+TO 'user_0d_2'@'localhost';
+
 GRANT SELECT
 0N `hbtn_0d_2`.*
 TO 'user_0d_2'@'localhost';
