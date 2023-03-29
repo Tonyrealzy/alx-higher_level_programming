@@ -2,8 +2,8 @@
 
 SELECT tvs.title
 FROM tv_shows AS tvs
-INNER JOIN tv_show_genres AS tvs
-ON tvs.id = tvs.show_id
+INNER JOIN tv_show_genres AS tvsg
+ON tvs.id = tvsg.show_id
 
 INNER JOIN tv_genres AS tvg
 ON tvg.id = tvs.genre_id
