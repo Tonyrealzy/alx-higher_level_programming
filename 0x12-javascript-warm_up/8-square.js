@@ -11,8 +11,8 @@ if (isNaN(Number(mySize))) {
 else {
     for (let i = 0; i < mySize - 1; i++) {
         rows += 'X';
-    for (let j =0; j < mySize; j++) {
+    }
+    for (let j = 0; j < mySize; j++) {
         console.log(rows);
-        }
     }
 }
