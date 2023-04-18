@@ -5,14 +5,14 @@
 const mySize = process.argv[2];
 let rows = 'X';
 
-if (isNaN(Number(mySize))){
+if (isNaN(Number(mySize))) {
     console.log("Missing size")
 }
 else {
-    for (let i = 0; i < mySize - 1; i++){
+    for (let i = 0; i < mySize - 1; i++) {
         rows += 'X';
-        for (let j =0; j < mySize; j++){
-            console.log(rows);
+    for (let j =0; j < mySize; j++) {
+        console.log(rows);
         }
     }
 }
