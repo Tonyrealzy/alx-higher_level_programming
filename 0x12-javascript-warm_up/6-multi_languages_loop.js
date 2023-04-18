@@ -7,5 +7,5 @@ let b = "Python is cool";
 let c = "JavaScript is amazing";
 let myArray = {a, b, c};
 for (let i = 0; i < 3; i++){
-    console.log(myArray);
+    console.log(myArray[i]);
 }
