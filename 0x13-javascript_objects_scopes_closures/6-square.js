@@ -6,16 +6,16 @@ const Square1 = require('./5-square')
 
 class Square extends Square1 {
     charPrint(c) {
-        let printout = ' ';
-        for (let i = 0; i < this.width; i++) {
-            printout += 'c';
-        }
         if (c === undefined) {
             c = 'X';
         }
-        for (let j = 0; j < this.height; j++) {
-            console.log(printout);
+        for (let i = 0; i < this.width; i++) {
+            let printout = ' ';
         }
+        for (let j = 0; j < this.height; j++) {
+            printout += 'c';
+        }
+        console.log(printout);
     }
 }
 
