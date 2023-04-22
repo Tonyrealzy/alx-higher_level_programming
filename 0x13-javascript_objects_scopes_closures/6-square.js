@@ -8,17 +8,17 @@ class Square extends Square1 {
     charPrint(c) {
         if (c === undefined) {
             let printout = 'X';
-            for (let i = 0; i < w - 1; i++) {
+            for (let i = 0; i < this.width - 1; i++) {
                 printout += 'X';
             }
         }
         else {
             let printout = 'c';
-            for (let i = 0; i < w - 1; i++) {
+            for (let i = 0; i < this.width - 1; i++) {
                 printout += 'c';
             }
         }
-        for (let j = 1; j < h; j++) {
+        for (let j = 1; j < this.height; j++) {
             console.log(printout);
         }
     }
