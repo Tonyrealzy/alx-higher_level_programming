@@ -2,8 +2,8 @@
 
 //function that prints the number of arguments already printed and the new argument value
 
+let narg = 0;
 exports.logMe = function (item) {
-    for (let i = 0; i < arguments.length; i++) {
-        console.log(i + ' ' + process.argv[i + 2]);
-    }
+    console.log(narg + ': ' + item);
+    narg++;
 }

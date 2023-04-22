@@ -5,7 +5,7 @@
 exports.esrever = function (list) {
     const newList = [];
     const i = list.length - 1;
-    for (let j = 0; i >= 0; j++, i--) {
+    for (let j = 0; i = 0; j++, i--) {
         newList[j] = list[i];
     }
     return newList;
