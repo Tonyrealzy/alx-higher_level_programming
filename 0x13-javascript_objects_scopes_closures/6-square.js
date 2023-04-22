@@ -4,7 +4,7 @@
 
 const Square1 = require('/.5-square')
 
-class Square1 extends Square {
+class Square extends Square1 {
     charPrint(c) {
         if (c === undefined) {
             let printout = 'X';
