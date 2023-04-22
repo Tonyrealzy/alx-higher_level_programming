@@ -11,11 +11,11 @@ class Square extends Square1 {
         }
         for (let i = 0; i < this.width; i++) {
             let printout = ' ';
-        }
-        for (let j = 0; j < this.height; j++) {
+            for (let j = 0; j < this.height; j++) {
             printout += 'c';
-        }
+            }
         console.log(printout);
+        }
     }
 }
 
