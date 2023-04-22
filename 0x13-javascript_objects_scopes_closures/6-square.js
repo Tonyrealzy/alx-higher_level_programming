@@ -14,7 +14,7 @@ class Square extends Square1 {
             for (let j = 0; j < this.height; j++) {
             printout += 'c';
             }
-        console.log(printout);
+            console.log(printout);
         }
     }
 }
