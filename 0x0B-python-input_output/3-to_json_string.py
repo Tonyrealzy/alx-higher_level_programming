@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """file of function that returns the JSON representation of an object"""
-
+import json
 
 def to_json_string(my_obj):
 	"""
@@ -9,6 +9,4 @@ def to_json_string(my_obj):
 		my_obj: object
 		Returns: JSON representation of the object
 	"""
-	witj
-	h
-
+	return json.dumps(my_obj)
