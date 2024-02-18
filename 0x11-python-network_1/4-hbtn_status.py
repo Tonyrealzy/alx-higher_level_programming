@@ -4,7 +4,7 @@ import requests
 
 
 if __name__ == "__main__":
-    # response = requests.get("https://intranet.hbtn.io/status")
+    # response = requests.get("https://alx-intranet.hbtn.io/status")
     r = requests.get("http://0.0.0.0:5050/status")
     if r.status_code == 200:
         print("Body response:")
