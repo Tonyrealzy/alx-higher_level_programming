@@ -3,6 +3,7 @@
 a peak is a number that is greater than its adjacent numbers """
 
 def find_peak(list_of_integers):
+    """this function finds a peak in a list of unsorted integers"""
 
     # check if list is empty
     if not list_of_integers:
