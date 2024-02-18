@@ -1,0 +1,1 @@
+This folder contains my scripts for my 0x10-python-network_0 tasks.
