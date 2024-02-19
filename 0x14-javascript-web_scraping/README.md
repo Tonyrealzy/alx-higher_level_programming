@@ -1,0 +1,1 @@
+This folder contains files that havae to do with my '0x14-javascript-web_scraping' tasks.
