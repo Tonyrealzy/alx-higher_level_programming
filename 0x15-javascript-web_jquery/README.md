@@ -1,0 +1,1 @@
+This folder contains files that have to do with my 0x15-javascript-web_jquery tasks.
